@@ -1,0 +1,22 @@
+.
+├── data
+│   └── DATASET
+│       ├── TEST
+│       │   ├── N
+│       │   ├── O
+│       │   └── R
+│       └── TRAIN
+│           ├── N
+│           ├── O
+│           └── R
+├── models
+├── requirements.txt
+├── src
+│   ├── data_preprocessing.py
+│   ├── helpers.py
+│   ├── model.py
+│   ├── predict.py
+│   └── train.py
+└── tree.txt
+
+13 directories, 7 files
