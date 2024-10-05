@@ -9,7 +9,7 @@ if not os.path.exists(MODEL_DIR):
     os.makedirs(MODEL_DIR)
 
 # Data directories
-data_dir = 'data/DATASET'
+data_dir = 'DATASET'
 
 # Parameters
 IMG_SIZE = (128, 128)
@@ -20,10 +20,10 @@ EPOCHS = 20
 train_generator, validation_generator = create_data_generators(data_dir, IMG_SIZE, BATCH_SIZE)
 
 # Create model
-model = create_cnn_model(input_shape=(128, 128, 3), num_classes=3)
+model = create_cnn_model(input_shape=(128, 128, 1), num_classes=3)
 
 # Save model checkpoint
-checkpoint = ModelCheckpoint(os.path.join(MODEL_DIR, 'saved_model.keras'), save_best_only=True)
+checkpoint = ModelCheckpoint(os.path.join(MODEL_DIR, 'saved_model3.keras'), save_best_only=True)
 
 # Train model
 history = model.fit(
