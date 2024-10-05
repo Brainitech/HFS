@@ -1,5 +1,7 @@
-tensorflow>=2.0
+tensorflow>=2.0 # for CPU supportW
+#tensorflow[and-cuda] # for GPU support
 numpy
 matplotlib
 Pillow
 scipy
+opencv-python
