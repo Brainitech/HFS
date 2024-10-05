@@ -21,13 +21,13 @@ def predict_image(img_path, model):
 
 # Test on a new image
 
-# img_path =random.choice([
-    # 'data/DATASET/TEST/R/' + random.choice(os.listdir('data/DATASET/TEST/R')),
-    # 'data/DATASET/TEST/N/' + random.choice(os.listdir('data/DATASET/TEST/N')),
-    # 'data/DATASET/TEST/O/' + random.choice(os.listdir('data/DATASET/TEST/O'))
-# ])
+img_path =random.choice([
+    'data/DATASET/TEST/R/' + random.choice(os.listdir('data/DATASET/TEST/R')),
+    'data/DATASET/TEST/N/' + random.choice(os.listdir('data/DATASET/TEST/N')),
+    'data/DATASET/TEST/O/' + random.choice(os.listdir('data/DATASET/TEST/O'))
+])
 
-img_path= 'Untitled.jpg'
+#img_path= 'Untitled.jpg'
 cv2.imshow('Image', cv2.imread(img_path))
 cv2.waitKey(0)
 cv2.destroyAllWindows()
