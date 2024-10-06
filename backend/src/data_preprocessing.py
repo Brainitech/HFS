@@ -14,6 +14,7 @@ def create_data_generators(data_dir, img_size=(128, 128), batch_size=32, validat
         target_size=img_size,
         batch_size=batch_size,
         class_mode='categorical',
+        color_mode='grayscale',
         subset='training'
     )
 
@@ -22,6 +23,7 @@ def create_data_generators(data_dir, img_size=(128, 128), batch_size=32, validat
         target_size=img_size,
         batch_size=batch_size,
         class_mode='categorical',
+        color_mode='grayscale',
         subset='validation'
     )
 
