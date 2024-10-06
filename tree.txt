@@ -1,0 +1,23 @@
+.
+├── backend
+│   ├── DATASET
+│   │   ├── TEST
+│   │   │   ├── N
+│   │   │   ├── O
+│   │   │   └── R
+│   │   └── TRAIN
+│   │       ├── N
+│   │       ├── O
+│   │       └── R
+│   ├── models
+│   └── src
+│       └── __pycache__
+└── frontend
+    └── UI
+        ├── public
+        └── src
+            ├── app
+            │   └── fonts
+            └── pages
+
+21 directories
