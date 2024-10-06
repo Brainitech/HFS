@@ -30,6 +30,7 @@ export default function UploadImage() {
         .then((res) => res.blob())
         .then((blob) => {
           setSelectedFile(blob)
+          setIsWebcam(false)
         })
     }
   }, [webcamRef])
@@ -95,18 +96,18 @@ export default function UploadImage() {
             </button>
 
             {isWebcam && (
-              <div className="flex flex-col items-center mt-4">
-                <Webcam ref={webcamRef} screenshotFormat="image/jpeg" />
-                <button type="button" onClick={capture} className="bg-green-600 bg-opacity-60 backdrop-blur-sm text-white py-2 px-4 rounded-md mt-4">
+              <div className="flex flex-col items-center mt-2">
+                <Webcam ref={webcamRef} screenshotFormat="image/jpeg" className="w-[400px] h-[350px]" />
+                <button type="button" onClick={capture} className="bg-green-600 bg-opacity-60 backdrop-blur-sm text-white py-2 px-4 rounded-md">
                   Capture Image
                 </button>
               </div>
             )}
 
-            {previewImage && (
+            {previewImage && !isWebcam && (
               <div className="flex justify-center text-center flex-col items-center mt-4">
                 <h3>Selected Image:</h3>
-                <img src={previewImage} alt="Selected" width="400px" className="max-h-[400px]" />
+                <img src={previewImage} alt="Selected" width="400px" className="max-h-[350px]" />
               </div>
             )}
           </div>
