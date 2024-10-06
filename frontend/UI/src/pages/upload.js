@@ -68,7 +68,7 @@ export default function UploadImage() {
     switch (prediction) {
       case "Recyclable":
         return "/1.png"
-      case "Organic":
+      case "Biodegradable":
         return "/2.png"
       case "Non_Recyclable":
         return "/3.png"

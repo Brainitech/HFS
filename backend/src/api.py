@@ -45,7 +45,7 @@ async def predict(file: UploadFile = File(...)):
     # Make prediction
     prediction = model.predict(processed_image)
     class_idx = np.argmax(prediction)
-    class_labels = ['Non_Recyclable', 'Organic', 'Recyclable']
+    class_labels = ['Non_Recyclable', 'Biodegradable', 'Recyclable']
     predicted_class = class_labels[class_idx]
     
     return {"predicted_class": predicted_class}
