@@ -60,7 +60,7 @@ The repository structure is organized as follows:
 
 To get started with the project, follow these steps:
 
-1. Clone the repository:
+1. **Clone the repository**:
 
    ```bash
    git clone https://github.com/Brainitech/HFS.git
