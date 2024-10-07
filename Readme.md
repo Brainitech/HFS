@@ -126,6 +126,6 @@ This approach allows for efficient and accurate sorting of waste, facilitating b
 
 ## Acknowledgments
 
-- **Birla Institute of Technology, Mesra** for organizing the hackathon.
+- **Birla Institute of Technology, Mesra: IET Club** for organizing the hackathon.
 
 ---
